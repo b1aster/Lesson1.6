@@ -74,5 +74,21 @@ public class Main {
             amount += deposit;
             System.out.println("Месяц " + i + ", сумма накоплений равна " + amount + " рублей");
         }
+
+        // Разделитель
+        System.out.println();
+
+        // Задание 3.2
+        System.out.println("--- Задание 3.2 ---");
+
+        float depositPercentage = 12.0f;
+
+        // Обнуляем сумму вклада
+        amount = 0;
+
+        for (int i = 1; i <= 12; i++){
+            amount += deposit + (amount * (depositPercentage / 2) / 100);
+            System.out.println("Месяц " + i + ", сумма накоплений равна " + amount + " рублей");
+        }
     }
 }
