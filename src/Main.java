@@ -25,5 +25,14 @@ public class Main {
             if (i % 2 == 0)
                 System.out.println(i);
         }
+
+        // Разделитель
+        System.out.println();
+
+        // Задание 4
+        System.out.println("--- Задание 4 ---");
+        for (int i = 10; i >= -10; i--){
+            System.out.println(i);
+        }
     }
 }
