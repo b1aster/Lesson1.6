@@ -61,5 +61,18 @@ public class Main {
         for (int i = 1; i <= 512; i *= 2){
             System.out.println(i);
         }
+
+        // Разделитель
+        System.out.println();
+
+        // Задание 3.1
+        System.out.println("--- Задание 3.1 ---");
+        int deposit = 29_000;
+        int amount = 0;
+
+        for (int i = 1; i <= 12; i++){
+            amount += deposit;
+            System.out.println("Месяц " + i + ", сумма накоплений равна " + amount + " рублей");
+        }
     }
 }
