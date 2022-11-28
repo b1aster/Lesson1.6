@@ -70,9 +70,9 @@ public class Main {
         int deposit = 29_000;
         int amount = 0;
 
-        for (int i = 1; i <= 12; i++){
+        for (int month = 1; month <= 12; month++){
             amount += deposit;
-            System.out.println("Месяц " + i + ", сумма накоплений равна " + amount + " рублей");
+            System.out.println("Месяц " + month + ", сумма накоплений равна " + amount + " рублей");
         }
 
         // Разделитель
@@ -86,9 +86,9 @@ public class Main {
         // Обнуляем сумму вклада
         amount = 0;
 
-        for (int i = 1; i <= 12; i++){
-            amount += deposit + (amount * (depositPercentage / 2) / 100);
-            System.out.println("Месяц " + i + ", сумма накоплений равна " + amount + " рублей");
+        for (int month = 1; month <= 12; month++){
+            amount += deposit + (amount * (depositPercentage / 12) / 100);
+            System.out.println("Месяц " + month + ", сумма накоплений равна " + amount + " рублей");
         }
     }
 }
